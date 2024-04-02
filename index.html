@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.min.css">
+    <script src="/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="user">
+                Name: <b></b>
+            </div>
+
+            <div class="timer">
+                <b>0</b>
+            </div>
+
+            <div class="tries">
+                Your tries: <b>0</b>
+            </div>
+        </header>
+
+        <div class="bestTries">
+            The best is <b id="name"></b> with <b id="tries"></b> tries and <b id="seconds"></b> seconds
+        </div>
+
+        <section>
+            <div class="card-box" data-tech="angular">
+                <div class="face back">
+                    <img src="/images/angular.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+            <div class="card-box" data-tech="angular">
+                <div class="face back">
+                    <img src="/images/angular.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+
+            <div class="card-box" data-tech="css">
+                <div class="face back">
+                    <img src="/images/css.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+            <div class="card-box" data-tech="css">
+                <div class="face back">
+                    <img src="/images/css.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+
+            <div class="card-box" data-tech="github">
+                <div class="face back">
+                    <img src="/images/github.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+            <div class="card-box" data-tech="github">
+                <div class="face back">
+                    <img src="/images/github.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+
+            <div class="card-box" data-tech="html">
+                <div class="face back">
+                    <img src="/images/html.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+            <div class="card-box" data-tech="html">
+                <div class="face back">
+                    <img src="/images/html.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+
+            <div class="card-box" data-tech="js">
+                <div class="face back">
+                    <img src="/images/js.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+            <div class="card-box" data-tech="js">
+                <div class="face back">
+                    <img src="/images/js.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+
+            <div class="card-box" data-tech="json">
+                <div class="face back">
+                    <img src="/images/json.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+            <div class="card-box" data-tech="json">
+                <div class="face back">
+                    <img src="/images/json.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+
+            <div class="card-box" data-tech="mango">
+                <div class="face back">
+                    <img src="/images/mango.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+            <div class="card-box" data-tech="mango">
+                <div class="face back">
+                    <img src="/images/mango.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+
+            <div class="card-box" data-tech="python">
+                <div class="face back">
+                    <img src="/images/python.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+            <div class="card-box" data-tech="python">
+                <div class="face back">
+                    <img src="/images/python.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+
+            <div class="card-box" data-tech="react">
+                <div class="face back">
+                    <img src="/images/react.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+            <div class="card-box" data-tech="react">
+                <div class="face back">
+                    <img src="/images/react.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+
+            <div class="card-box" data-tech="ruby">
+                <div class="face back">
+                    <img src="/images/ruby.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+            <div class="card-box" data-tech="ruby">
+                <div class="face back">
+                    <img src="/images/ruby.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+
+            <div class="card-box" data-tech="swift">
+                <div class="face back">
+                    <img src="/images/swift.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+            <div class="card-box" data-tech="swift">
+                <div class="face back">
+                    <img src="/images/swift.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+
+            <div class="card-box" data-tech="vue">
+                <div class="face back">
+                    <img src="/images/vue.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+            <div class="card-box" data-tech="vue">
+                <div class="face back">
+                    <img src="/images/vue.png" alt="Card">
+                </div>
+
+                <div class="face front"></div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="my-info">
+                <a href="https://twitter.com/AhmadAlhadidi95" target="_blank" rel="noopener noreferrer" title="Visit my Twitter (X)"><i class="fa-brands fa-x-twitter""></i></a>
+                <img src="/images/My-sign.png" alt="My-sign" width="50px">
+                <a href="https://github.com/AhmadAlhadidi95" target="_blank" rel="noopener noreferrer" title="Visit my Github"><i class="fa-brands fa-github""></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="sounds">
+        <audio id="music" src="/sounds/music.mp3"></audio>
+        <audio id="success" src="/sounds/success.mp3"></audio>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
